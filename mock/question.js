@@ -17,4 +17,16 @@ module.exports = [
       }
     },
   },
+  {
+    url: '/api/question',
+    method: 'post',
+    response() {
+      return {
+        errno: 0,
+        data: {
+          id: Random.id(),
+        },
+      }
+    },
+  },
 ]
