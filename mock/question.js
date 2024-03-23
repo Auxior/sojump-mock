@@ -14,7 +14,39 @@ module.exports = [
         data: {
           id: Random.id(),
           title: Random.ctitle(),
-          // ...
+          componentList: [
+            // Title
+            {
+              id: Random.id(),
+              type: 'questionTitle',
+              title: '标题',
+              props: {
+                text: '个人信息调研',
+                level: 1,
+                isCenter: false,
+              },
+            },
+            // Input
+            {
+              id: Random.id(),
+              type: 'questionInput',
+              title: '输入框1',
+              props: {
+                text: '你的姓名',
+                placeholder: '请输入姓名...',
+              },
+            },
+            // Input
+            {
+              id: Random.id(),
+              type: 'questionInput',
+              title: '输入框2',
+              props: {
+                text: '你的电话',
+                placeholder: '请输入电话...',
+              },
+            },
+          ],
         },
       }
     },
